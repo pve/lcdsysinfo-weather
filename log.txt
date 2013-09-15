@@ -1,0 +1,3 @@
+--2013-09-15 13:17:01--  http://weather.yahooapis.com/forecastrss?w=734047&u=c
+Resolving weather.yahooapis.com (weather.yahooapis.com)... failed: Name or service not known.
+wget: unable to resolve host address `weather.yahooapis.com'
