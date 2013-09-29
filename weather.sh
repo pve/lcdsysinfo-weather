@@ -10,5 +10,6 @@ sed -i 's/<BR \/>//g' yw
 sed -i 's/High/\nHigh/g' yw
 date "+%a %b %d   %H:%I" >> yw
 echo Displaying..
-sudo ./weather.py
+. ./watchmousenkey
+sudo -E ./weather.py
 echo Done
