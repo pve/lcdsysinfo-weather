@@ -39,7 +39,7 @@ totalchecks = data['result']['stats'][0]['checks']
 totalerrors = data['result']['stats'][0]['check_errors']
 
 bad = " "
-line = str("WatchMouse err " + totalerrors + "/" + totalchecks )
+line = str("WatchM err " + totalerrors + "/" + totalchecks )
 print line
 
 col = TextColours.GREEN

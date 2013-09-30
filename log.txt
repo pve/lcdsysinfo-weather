@@ -1,11 +1,11 @@
---2013-09-29 14:48:22--  http://weather.yahooapis.com/forecastrss?w=734047&u=c
+--2013-09-30 20:17:01--  http://weather.yahooapis.com/forecastrss?w=734047&u=c
 Resolving weather.yahooapis.com (weather.yahooapis.com)... 188.125.73.190
 Connecting to weather.yahooapis.com (weather.yahooapis.com)|188.125.73.190|:80... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 2721 (2.7K) [text/xml]
+Length: 2708 (2.6K) [text/xml]
 Saving to: `yw.htm'
 
-     0K ..                                                    100% 45.3K=0.06s
+     0K ..                                                    100% 45.5K=0.06s
 
-2013-09-29 14:48:23 (45.3 KB/s) - `yw.htm' saved [2721/2721]
+2013-09-30 20:17:01 (45.5 KB/s) - `yw.htm' saved [2708/2708]
 
