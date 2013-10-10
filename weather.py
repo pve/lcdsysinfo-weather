@@ -26,17 +26,20 @@ startdate = "&start_date=" + today
 
 url = "https://api.cloudmonitor.ca.com/1.6/rule_stats?nkey=" + nkey + mytags + startdate + "&callback=json"
 
+totalerrors =""
+totalchecks ="No data"
+
 try:
   jsonp = urllib2.urlopen(url).read()
   jsondata = jsonp[ jsonp.index("(")+1 : jsonp.rindex(")") ]
   data = json.loads(jsondata)
+  totalchecks = data['result']['stats'][0]['checks'] 
+  totalerrors = data['result']['stats'][0]['check_errors']
 except urllib2.URLError, e:
   print 'no valid data received' 
 
 print data
 
-totalchecks = data['result']['stats'][0]['checks'] 
-totalerrors = data['result']['stats'][0]['check_errors']
 
 bad = " "
 line = str("WatchM err " + totalerrors + "/" + totalchecks )
