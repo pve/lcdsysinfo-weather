@@ -1,0 +1,4 @@
+- hosts: raspberry
+  tasks:
+    - name: test connection
+      ping:

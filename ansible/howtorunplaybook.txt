@@ -1,0 +1,6 @@
+# first make sure this machine's public key is registered at the target. 
+# you might bootstrap this with ssh-copy-id 
+# ~pi/.ssh/authorized_keys 
+
+ansible raspberry -i hosts -m ping
+ansible-playbook 
