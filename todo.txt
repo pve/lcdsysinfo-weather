@@ -1,0 +1,6 @@
+#cp *.py en *.sh naar goede dir,
+iets met watchmouse key
+en de cronjob installeren in de juiste directory
+
+#en voor goed measure een i am alive test (niet op de volgende cron wachten)
+
