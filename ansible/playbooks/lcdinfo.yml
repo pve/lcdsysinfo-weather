@@ -1,9 +1,9 @@
 - hosts: raspberrypi
   remote_user: pi
   tasks:
-  - name: deploy code
-    copy: src=../../code/ dest=/home/pi/lcdsysinfo/code
-  - name: Test the command
-    command: chdir=/home/pi/lcdsysinfo /bin/sh code/weather.sh
-# install cron job, run the command
 # make sure python and libraries are installed
+  - name: deploy code
+    copy: src=../../app/ dest=/home/pi/lcdsysinfo/app
+  - name: Test the command
+    command: chdir=/home/pi/lcdsysinfo /bin/sh app/weather.sh
+# install cron job, run the command
