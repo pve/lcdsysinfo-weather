@@ -8,6 +8,7 @@ sed '2d' yw2 > yw
 sed -i 's/<br \/>//g' yw
 sed -i 's/<BR \/>//g' yw
 sed -i 's/High/\nHigh/g' yw
+echo utrecht weather >>yw
 date "+%a %b %d   %H:%I" >> yw
 echo Displaying..
 . ./watchmousenkey
