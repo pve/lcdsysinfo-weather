@@ -1,6 +1,0 @@
---2016-05-12 22:13:50--  http://weather.yahooapis.com/forecastrss?w=734047&u=c
-Resolving weather.yahooapis.com... 72.30.202.51
-Connecting to weather.yahooapis.com|72.30.202.51|:80... connected.
-HTTP request sent, awaiting response... 401 Unauthorized
-
-Username/Password Authentication Failed.
