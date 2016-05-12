@@ -6,7 +6,7 @@
     pip: name=pyusb
 # /pylcdsysinfo
   - name: deploy code
-    copy: src=../../app/ dest=/home/pi/lcdsysinfo/app
+    copy: src=../../app/ dest=/home/pi/lcdsysinfo/app mode=0755
   - name: permissions for USB
     become: yes
     become_user: root
