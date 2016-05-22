@@ -11,6 +11,6 @@ sed -i 's/High/\nHigh/g' yw
 echo Utrecht weather >>yw
 date "+%a %b %d   %H:%M" >> yw
 echo Displaying..
-. ./watchmousenkey
+. ./keystore
 sudo -E ./weather.py
 echo Done
