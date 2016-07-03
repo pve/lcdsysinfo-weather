@@ -38,7 +38,7 @@ try:
 except urllib2.URLError, e:
   print 'no valid data received' 
 
-print data
+print json.dumps(data)
 
 
 bad = " "
