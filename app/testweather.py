@@ -23,7 +23,8 @@ w.get_detailed_status()
 t = w.get_temperature(unit='celsius')
 t.get('temp_min')
 t.get('temp_max')
-display = "T: " + str(round(t.get('temp_min'))) + " " + str(round(t.get('temp_max')))+ " " + w.get_detailed_status()
+display = "T:" + '{:0.0f}'.format(t.get('temp_min')) + "-" + '{:0.0f}'.format(t.get('temp_max')) +" W:" + '{:0.0f}'.format(w.get_wind()['speed']) + " " + w.get_detailed_status()
 # add wind
 
 print(display)
+
