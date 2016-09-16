@@ -2,11 +2,13 @@
   remote_user: pi
   tasks:
 # make sure python and libraries are installed
-  - name: Python package
-    pip: name=pyusb
-# /pylcdsysinfo
   - name: deploy code
     copy: src=../../app/ dest=/home/pi/lcdsysinfo/app mode=0755
+  - name: Python package
+    become: yes
+    become_user: root
+    pip: requirements=/home/pi/lcdsysinfo/app/requirements.txt
+# /pylcdsysinfo
   - name: permissions for USB
     become: yes
     become_user: root
