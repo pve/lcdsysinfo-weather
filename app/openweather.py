@@ -8,12 +8,9 @@ owm = pyowm.OWM('73577fe4d4c5426ca395f5a679af2412')  # You MUST provide a valid 
 #owm = pyowm.OWM(owmkey)
 #owm.is_API_online()
 
-forecast = owm.daily_forecast("Milan,it")
-tomorrow = pyowm.timeutils.tomorrow()
-forecast.will_be_sunny_at(tomorrow)  # Always True in Italy, right? ;-)
-
 # Search for current weather 
 observation = owm.weather_at_place('Utrecht,nl')
+observation = owm.weather_at_id(2745912) #Utrecht
 forecast = owm.daily_forecast("Utrecht,nl")
 # fo = forecast.get_weather_at(timeutils.next_three_hours())
 # this is not always in the forecast
