@@ -33,7 +33,7 @@ def weatherline(w):
 
 #print(weatherline(wo))
 def observe():
-    weatherline(wo)
+    return weatherline(wo)
 
 #print(weatherline(fo))
 
