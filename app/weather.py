@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 from pylcdsysinfo import BackgroundColours, TextColours, TextAlignment, TextLines, LCDSysInfo
+from openweather import observe
 
 d = LCDSysInfo()
 d.clear_lines(TextLines.ALL, BackgroundColours.BLACK)
@@ -43,7 +44,7 @@ print json.dumps(data)
 
 bad = " "
 line = str("WatchM err " + totalerrors + "/" + totalchecks )
-print line
+#print line
 
 col = TextColours.GREEN
 d.display_text_on_line(6, line, False, TextAlignment.LEFT, col)
@@ -65,3 +66,6 @@ for line in f:
         c = c + 1
         if c > 5:
                 break
+
+col = TextColours.PURPLE
+d.display_text_on_line(3, observe(), False, TextAlignment.LEFT, col)
