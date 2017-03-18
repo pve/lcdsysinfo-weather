@@ -43,7 +43,7 @@ print json.dumps(data)
 
 
 bad = " "
-line = str("WatchM err " + totalerrors + "/" + totalchecks )
+line = str("WatchM err " + str(totalerrors) + "/" + str(totalchecks) )
 #print line
 
 col = TextColours.GREEN
